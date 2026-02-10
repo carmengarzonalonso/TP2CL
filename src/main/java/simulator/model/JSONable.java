@@ -1,5 +1,9 @@
 package simulator.model;
 
-public class JSONable {
-    HSOA HF PAPEFAPHFEP9
-}
+import org.json.JSONObject;
+
+public interface JSONable {
+    default public JSONObject asJSON() {
+        return new JSONObject();}
+    }
+
